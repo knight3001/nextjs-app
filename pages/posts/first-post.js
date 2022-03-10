@@ -1,9 +1,14 @@
 import Link from "next/link";
+import Head from "next/head";
 import Paypal from "../../components/Paypal";
+import Layout from "../../components/Layout";
 
 export default function FirstPost() {
   return (
-    <>
+    <Layout>
+      <Head>
+        <title>First Post</title>
+      </Head>
       <h1>First Post</h1>
       <Paypal />
       <h2>
@@ -11,6 +16,6 @@ export default function FirstPost() {
           <a>Back to home</a>
         </Link>
       </h2>
-    </>
+    </Layout>
   );
 }
